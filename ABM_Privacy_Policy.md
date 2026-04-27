@@ -1,4 +1,4 @@
-﻿**abconputers@gmail.com@abmapp.pkAB Marketplace (ABM)**
+﻿**abconputers@gmail.com AB Marketplace (ABM)**
 
 **Privacy Policy**
 
