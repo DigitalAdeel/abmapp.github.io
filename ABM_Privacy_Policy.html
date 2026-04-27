@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
+<title></title>
+
+<meta name="author" content="Un-named" />
+<style type="text/css">
+.Normal {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+}
+.Title {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:28.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+}
+h1 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:16.0pt;
+color:#2E74B5;
+font-weight:normal;
+border:none;
+}
+h2 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:13.0pt;
+color:#2E74B5;
+font-weight:normal;
+border:none;
+}
+h3 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:12.0pt;
+color:#1F4D78;
+font-weight:normal;
+border:none;
+}
+h4 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#2E74B5;
+font-style:italic;
+font-weight:normal;
+border:none;
+}
+h5 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#2E74B5;
+font-weight:normal;
+border:none;
+}
+h6 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1F4D78;
+font-weight:normal;
+border:none;
+}
+.Strong {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:bold;
+border:none;
+}
+.ListParagraph {
+mso-style-name:"List Paragraph";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+}
+.FootnoteText {
+mso-style-name:"Footnote Text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+}
+.EndnoteText {
+mso-style-name:"Endnote Text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+}
+.Heading1_ {
+mso-style-name:"Heading 1*";
+margin:1.0pt;
+margin-top:18.0pt;
+margin-bottom:6.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:15.0pt;
+color:#1B4F72;
+font-weight:bold;
+border:none;
+}
+.Heading2_ {
+mso-style-name:"Heading 2*";
+margin:1.0pt;
+margin-top:14.0pt;
+margin-bottom:5.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:12.0pt;
+color:#1A5276;
+font-weight:bold;
+border:none;
+}
+.Heading3_ {
+mso-style-name:"Heading 3*";
+margin:1.0pt;
+margin-top:10.0pt;
+margin-bottom:4.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#2E4057;
+font-weight:bold;
+border:none;
+}
+.Hyperlink {
+color:#0563C1;}
+.Footnote_Reference {
+}
+.Footnote_Text_Char {
+font-size:10.0pt;}
+.Endnote_Reference {
+}
+.Endnote_Text_Char {
+font-size:10.0pt;}
+
+.tm21 {
+margin-bottom:3.0pt;
+text-align:center;
+}
+.tm22 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+margin-bottom:3.0pt;
+text-align:center;
+}
+.tm23 {
+font-size:20.0pt;
+font-weight:bold;
+}
+.tm24 {
+color:#1B4F72;
+font-size:20.0pt;
+font-weight:bold;
+}
+.tm25 {
+color:#1A5276;
+font-size:16.0pt;
+font-weight:bold;
+}
+.tm26 {
+color:#666666;
+font-size:10.0pt;
+}
+.tm27 {
+border:none;
+border-bottom:solid #AAAAAA 1.0pt;
+padding-bottom:1.0pt;
+}
+.tm28 {
+margin-bottom:10.0pt;
+}
+.tm29 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+border:none;
+border-bottom:solid #AAAAAA 1.0pt;
+padding-bottom:1.0pt;
+margin-bottom:10.0pt;
+}
+.tm30 {
+margin-bottom:6.0pt;
+text-align:justify;
+}
+.tm31 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+margin-bottom:6.0pt;
+text-align:justify;
+}
+.tm32 {
+margin-bottom:4.0pt;
+}
+.tm33 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+margin-bottom:4.0pt;
+}
+.tm34 {
+margin-bottom:6.0pt;
+}
+.tm35 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+margin-bottom:6.0pt;
+}
+.tm36 {
+margin-left:36.0pt;
+text-indent:-18.0pt;
+}
+.tm37 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+margin-left:36.0pt;
+text-indent:-18.0pt;
+}
+.tm38 {
+font-weight:bold;
+}
+.tm39 {
+margin-top:4.0pt;
+margin-bottom:6.0pt;
+margin-left:18.0pt;
+}
+.tm40 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+margin-top:4.0pt;
+margin-bottom:6.0pt;
+margin-left:18.0pt;
+}
+.tm41 {
+font-style:italic;
+color:#1F618D;
+font-size:10.5pt;
+}
+.tm42 {
+color:#C0392B;
+font-weight:bold;
+}
+.tm43 {
+text-align:center;
+}
+.tm44 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:11.0pt;
+color:#1A1A1A;
+font-weight:normal;
+border:none;
+text-align:center;
+}
+.tm45 {
+font-style:italic;
+color:#888888;
+font-size:9.0pt;
+}
+
+</style>
+</head>
+<body>
+<p class="tm22"><strong><u><a href="mailto:abconputers@gmail.com"><span class="tm23">abconputers@gmail.com</span></a></u><span
+ class="tm24"><br />AB Marketplace (ABM)</span></strong></p>
+<p class="tm22"><strong><span class="tm25">Privacy Policy</span></strong></p>
+<p class="tm22"><span class="tm26">Effective Date: May 1, 2025</span></p>
+<p class="tm22"><span class="tm26">Jurisdiction: Islamic Republic of Pakistan</span></p>
+<p class="tm29">&#160;</p>
+<h1>1. Introduction</h1>
+<p class="tm31">AB Marketplace (ABM) (&quot;ABM&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting the privacy of its users (&quot;you&quot; or &quot;User&quot;). This Privacy Policy describes
+in detail what personal information we collect, how it is used and shared, how it is protected, and your rights with respect to that information.</p>
+<p class="tm31">ABM is a hybrid marketplace platform combining classifieds (OLX-style peer-to-peer listings), multi-vendor product discovery (Daraz-style retail), and auction/bidding functionality (eBay-style), operating exclusively
+within the Islamic Republic of Pakistan. By creating an account or using the ABM App, you consent to the data practices described in this Privacy Policy.</p>
+<p class="tm33">&#160;</p>
+<h1>2. Data Controller</h1>
+<p class="tm35">The data controller responsible for your personal information is ABM Operations, operating within Pakistan. For privacy-related inquiries, contact us at: abconputers@gmail.com</p>
+<p class="tm33">&#160;</p>
+<h1>3. Information We Collect</h1>
+<h2>3.1 Information You Provide Directly</h2>
+<p class="tm35">When you register and use ABM, you voluntarily provide us with:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Account Information: </span></strong>Full name, username, phone number, and email address used during registration;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Profile Information: </span></strong>Profile photograph, seller/buyer biography, and contact preferences;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Listing Content (UGC): </span></strong>Item titles, descriptions, condition details, pricing, and photographs you upload when creating a listing;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Communication Data: </span></strong>The content of messages, offers, and communications sent via ABM&#39;s in-app chat system;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Dispute &amp; Report Data: </span></strong>Information you submit when filing a scam report or dispute, including evidence (photographs, transaction proofs);</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Location Data: </span></strong>Your approximate or precise geographic location used for listing visibility, fraud detection, and province-locking anti-fraud measures. Location
+is collected via GPS (with your consent) or approximated via IP address.</p>
+<p class="tm33">&#160;</p>
+<h2>3.2 Information Collected Automatically</h2>
+<p class="tm35">When you use the App, certain information is collected automatically:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Device Information: </span></strong>Device model, operating system version, unique device identifiers (Android ID);</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Usage Data: </span></strong>Features accessed, pages viewed, time spent, actions taken within the App, auction bid history, and search queries;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Log Data: </span></strong>IP address, app crash reports, error logs, and timestamp data collected for debugging and operational stability;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Advertising Identifiers: </span></strong>Your Google Advertising ID (GAID) as collected by Google AdMob for the purpose of serving targeted advertisements (detailed in Section
+5).</p>
+<p class="tm33">&#160;</p>
+<h2>3.3 Information We Do NOT Collect</h2>
+<p class="tm35">ABM does not collect:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Credit card numbers, bank account details, or any payment credentials: </span></strong>(Premium billing is handled externally, off-app);</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Government-issued ID numbers: </span></strong>(e.g., CNIC) unless voluntarily submitted as part of a deal dispute investigation;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Biometric data of any kind.</span></strong></p>
+<p class="tm33">&#160;</p>
+<h1>4. How We Use Your Information</h1>
+<p class="tm35">We use the information collected for the following purposes:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Account Management: </span></strong>Creating, verifying, and maintaining your user account;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Listing &amp; Marketplace Operations: </span></strong>Displaying your listings to other users, enabling search and discovery, and managing auction and barter features;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Communication Facilitation: </span></strong>Enabling in-app messaging between buyers and sellers;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Fraud Prevention &amp; Safety: </span></strong>Detecting, investigating, and preventing scams, fake listings, shill bidding, and other prohibited activities. This includes
+using location data for province-locking anti-fraud checks;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Content Moderation: </span></strong>Reviewing listings, chat messages, and user content to enforce our Terms &amp; Conditions;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Dispute Resolution: </span></strong>Reviewing submitted evidence to adjudicate Deal Via Admin disputes;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Advertising: </span></strong>Displaying personalized and non-personalized ads via Google AdMob (see Section 5);</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Analytics &amp; Product Improvement: </span></strong>Understanding how users interact with the App to improve features, performance, and user experience (see Section 6 on
+PostHog);</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Notifications: </span></strong>Sending push notifications related to your listings, bids, messages, and account activity (see Section 7 on Firebase);</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Legal Compliance: </span></strong>Complying with applicable Pakistani law, including the Prevention of Electronic Crimes Act (PECA) 2016 and any lawful orders from Pakistani
+authorities.</p>
+<p class="tm33">&#160;</p>
+<h1>5. Third-Party Services &amp; Data Sharing</h1>
+<h2>5.1 Google AdMob (Advertising)</h2>
+<p class="tm40"><em><span class="tm41">&#8505;&#65039;  AdMob collects advertising identifiers and usage data to serve personalized ads. This is Google&#39;s service governed by Google&#39;s Privacy Policy.</span></em></p>
+<p class="tm35">ABM uses Google AdMob, a mobile advertising service provided by Google LLC, to display advertisements within the App. This includes banner ads, interstitial ads, and rewarded video advertisements.</p>
+<p class="tm35">In connection with AdMob, Google may collect and process:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Your Google Advertising ID (GAID);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Device information (model, OS version, screen size);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">IP address and approximate location;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">App usage patterns and interaction data;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Demographic inferences derived from the above for targeted advertising purposes.</span></strong></p>
+<p class="tm35">This data is used by Google and its advertising partners to serve you relevant advertisements. Google may share this data with its advertising partners in accordance with Google&#39;s Privacy Policy.</p>
+<p class="tm35">You may opt out of personalized advertising by adjusting your device settings under &#39;Ads&#39; in your Android settings (resetting or opting out of ad personalization via your Google Advertising ID). Note
+that opting out does not eliminate ads; it results in non-personalized ads.</p>
+<p class="tm35">Google AdMob Privacy Policy: https://policies.google.com/privacy</p>
+<p class="tm33">&#160;</p>
+<h2>5.2 Firebase Cloud Messaging (FCM) &#8212; Push Notifications</h2>
+<p class="tm40"><em><span class="tm41">&#8505;&#65039;  Firebase FCM is used solely to deliver push notifications. Google receives your device token to route notifications to your device.</span></em></p>
+<p class="tm35">ABM uses Firebase Cloud Messaging (FCM), a notification delivery service provided by Google LLC, to send you push notifications regarding:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">New messages received via in-app chat;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Auction activity (new bids, auction ending soon, auction results);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Listing status updates (approved, rejected);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Deal Via Admin status updates and Admin decisions;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Account security and moderation notices.</span></strong></p>
+<p class="tm35">To deliver push notifications, Firebase FCM assigns your device a unique FCM registration token. ABM stores this token in association with your account. Google&#39;s FCM infrastructure processes the routing
+of notifications to your device.</p>
+<p class="tm35">Data shared with Firebase: FCM device token, notification payload (message content and routing metadata). Notification content is transmitted securely.</p>
+<p class="tm35">You may disable push notifications at any time through your device&#39;s notification settings or within the ABM app settings. Disabling notifications does not affect your account.</p>
+<p class="tm35">Firebase Privacy Policy: https://firebase.google.com/support/privacy</p>
+<p class="tm33">&#160;</p>
+<h2>5.3 PostHog (Product Analytics &amp; Logging)</h2>
+<p class="tm40"><em><span class="tm41">&#8505;&#65039;  PostHog is used for application logging, error tracking, and usage analytics to improve ABM. No personally identifiable information is intentionally sent to PostHog.</span></em></p>
+<p class="tm35">ABM uses PostHog, a product analytics platform, to collect anonymized usage data and application event logs. This helps us understand feature usage patterns, diagnose errors, and improve the App.</p>
+<p class="tm35">Data collected by PostHog includes:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Anonymized or pseudonymized user identifiers (internal ABM user ID, not your name or phone number);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">In-app events (e.g., &#39;listing_created&#39;, &#39;auction_bid_placed&#39;, &#39;screen_viewed&#39;) and associated metadata;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">App version, device type, and OS version;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Session data (session duration, feature interaction sequences);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Error and crash logs.</span></strong></p>
+<p class="tm35">ABM does not intentionally send your name, phone number, email address, or message content to PostHog. Event data is used exclusively for product analytics and service improvement.</p>
+<p class="tm35">PostHog Privacy Policy: https://posthog.com/privacy</p>
+<p class="tm33">&#160;</p>
+<h2>5.4 Appwrite (Backend Infrastructure)</h2>
+<p class="tm35">ABM uses Appwrite as a backend-as-a-service provider to power core App functionality including user authentication, database storage, file storage, and messaging. Your data (account information, listings, messages,
+notification records) is stored on Appwrite&#39;s infrastructure. Appwrite is configured by ABM and does not independently use your data for its own commercial purposes.</p>
+<p class="tm33">&#160;</p>
+<h2>5.5 Summary of Third-Party Data Recipients</h2>
+<p class="tm35">The following table summarises who may receive your data:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Google AdMob: </span></strong>Device advertising ID, usage data &#8212; Purpose: Serving advertisements</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Google Firebase FCM: </span></strong>FCM device token &#8212; Purpose: Push notification delivery</p>
+<p class="tm37">&#8226; <strong><span class="tm38">PostHog: </span></strong>Anonymized usage events and logs &#8212; Purpose: Analytics and error tracking</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Appwrite: </span></strong>Account, listing, chat, and notification data &#8212; Purpose: Core app backend</p>
+<p class="tm37">&#8226; <strong><span class="tm38">ABM Administrators: </span></strong>All data including chat messages &#8212; Purpose: Moderation and dispute resolution</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Pakistani Authorities: </span></strong>Any data required by valid legal order &#8212; Purpose: Legal compliance under PECA 2016</p>
+<p class="tm33">&#160;</p>
+<h2>5.6 No Sale of Personal Data</h2>
+<p class="tm35">ABM does not sell your personal data to any third party for their independent commercial use. Data shared with third-party service providers listed above is shared solely for the operational purposes described.</p>
+<p class="tm33">&#160;</p>
+<h1>6. Chat Messages: Encryption &amp; Admin Access</h1>
+<p class="tm40"><strong><span class="tm42">&#9888;&#65039;  Your in-app chat messages are NOT end-to-end encrypted. Admins can read stored messages for moderation purposes.</span></strong></p>
+<p class="tm35">ABM&#39;s in-app chat system provides transport-layer encryption (TLS/SSL) for messages in transit between your device and ABM&#39;s servers. This means messages are protected from interception while being
+transmitted over the network.</p>
+<p class="tm35">However, ABM does NOT implement end-to-end encryption. This means:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Once messages are delivered and stored on ABM&#39;s backend database (Appwrite), they are stored in a readable format;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Authorized ABM administrators have the technical capability and the explicit right to read stored chat messages;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">This access is exercised specifically for the purposes of: investigating scam reports; resolving disputes under Deal Via Admin; moderating violations of the Terms &amp; Conditions;
+and complying with lawful orders from Pakistani authorities.</span></strong></p>
+<p class="tm35">This approach is intentional and mirrors the moderation model employed by major classifieds platforms (such as OLX Pakistan) to protect users from fraud and abuse. By using ABM&#39;s chat feature, you expressly
+consent to this level of access.</p>
+<p class="tm35">Do not send content via ABM chat that you wish to keep entirely private, including sensitive financial details or personal identification documents.</p>
+<p class="tm33">&#160;</p>
+<h1>7. Location Data</h1>
+<p class="tm35">ABM collects location data to:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Display geographically relevant listings to you;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Show your listing to users in your area;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Enforce province-level anti-fraud locking (to prevent misrepresentation of seller location);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Comply with any applicable Pakistani regulatory requirements.</span></strong></p>
+<p class="tm35">Location is obtained primarily via your device&#39;s GPS (requires your permission) or approximated via IP address as a fallback. You may revoke location permission at any time through your device settings;
+however, this may affect the App&#39;s functionality.</p>
+<p class="tm33">&#160;</p>
+<h1>8. Data Retention</h1>
+<p class="tm35">We retain your personal information for as long as your account is active and as long as is necessary to provide our services and comply with legal obligations. Specifically:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Account data is retained for the lifetime of your account and for a period of 12 months following account deletion, for dispute resolution and legal compliance purposes;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Listing content and UGC may be retained for a period after deletion for archival and audit purposes;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Chat messages are retained for a minimum period necessary for dispute resolution;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Log data and analytics data are retained in accordance with PostHog&#39;s and ABM&#39;s data retention policies (typically 90 days for raw logs);</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Upon a valid account deletion request, we will delete or anonymize your data within a reasonable timeframe, except where retention is required by law.</span></strong></p>
+<p class="tm33">&#160;</p>
+<h1>9. Data Security</h1>
+<p class="tm35">ABM implements commercially reasonable technical and organisational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These include:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Transport Layer Security (TLS/SSL) encryption for all data transmitted between your device and our servers;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Access controls restricting administrator access to personal data;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Secure credential storage using hashing and salting for passwords;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Regular review of our data collection, storage, and processing practices.</span></strong></p>
+<p class="tm35">No method of electronic transmission or storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security. In the event of a data breach affecting your rights and freedoms,
+we will notify affected users as required by applicable law.</p>
+<p class="tm33">&#160;</p>
+<h1>10. Children&#39;s Privacy</h1>
+<p class="tm35">ABM is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information
+without parental consent, we will take steps to delete such information. If you believe a child under 13 has registered on ABM, please contact us at abconputers@gmail.com.</p>
+<p class="tm33">&#160;</p>
+<h1>11. Your Rights</h1>
+<p class="tm35">As a user of ABM, you have the following rights regarding your personal data:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Right of Access: </span></strong>You may request a copy of the personal data we hold about you;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Right to Correction: </span></strong>You may request that we correct inaccurate or incomplete data;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Right to Deletion: </span></strong>You may request deletion of your account and associated personal data, subject to our retention obligations;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Right to Withdraw Consent: </span></strong>Where processing is based on consent (e.g., location), you may withdraw consent at any time via device settings;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Right to Lodge a Complaint: </span></strong>You may lodge a complaint with the Pakistan Telecommunication Authority (PTA) or any other competent Pakistani regulatory authority
+if you believe your privacy rights have been violated.</p>
+<p class="tm35">To exercise these rights, contact us at abconputers@gmail.com. We will respond to verifiable requests within a reasonable timeframe.</p>
+<p class="tm33">&#160;</p>
+<h1>12. Cookies &amp; Similar Technologies</h1>
+<p class="tm35">As a native mobile application, ABM does not use browser cookies. The App may use local device storage (shared preferences) to save session data, user preferences, and app state locally on your device. This
+data is not transmitted to third parties.</p>
+<p class="tm33">&#160;</p>
+<h1>13. Third-Party Links</h1>
+<p class="tm35">ABM listings may contain links to external websites or third-party services. This Privacy Policy does not apply to those third-party sites. We encourage you to review the privacy policies of any third-party
+sites you visit.</p>
+<p class="tm33">&#160;</p>
+<h1>14. Compliance with Pakistani Law</h1>
+<p class="tm35">This Privacy Policy is designed to comply with applicable Pakistani law, including but not limited to:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">The Prevention of Electronic Crimes Act (PECA), 2016;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Pakistan Telecommunication Authority (PTA) regulations;</span></strong></p>
+<p class="tm37">&#8226; <strong><span class="tm38">Any applicable data protection directives or regulations issued by Pakistani authorities.</span></strong></p>
+<p class="tm35">ABM will comply with lawful orders from Pakistani courts or regulatory authorities requiring disclosure of user data. Where legally permitted, we will attempt to notify affected users of such requests.</p>
+<p class="tm33">&#160;</p>
+<h1>15. Google Play Data Safety Disclosure Summary</h1>
+<p class="tm35">The following is a summary of our data practices as required for Google Play Store Data Safety disclosure:</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Data Collected: </span></strong>Name, phone number, email, location, device ID, advertising ID, usage data, photos, messages;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Data Shared: </span></strong>Advertising ID and usage data with Google AdMob; device token with Firebase FCM; anonymized events with PostHog;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Data Encrypted in Transit: </span></strong>Yes (TLS/SSL);</p>
+<p class="tm37">&#8226; <strong><span class="tm38">Data Deletion Requests: </span></strong>Supported &#8212; contact abconputers@gmail.com;</p>
+<p class="tm37">&#8226; <strong><span class="tm38">No Credit Card Data Collected: </span></strong>Premium billing is handled externally, off-app.</p>
+<p class="tm33">&#160;</p>
+<h1>16. Changes to This Privacy Policy</h1>
+<p class="tm35">We may update this Privacy Policy from time to time. We will notify you of material changes through in-app notifications or by updating the effective date above. Continued use of the App after the updated Policy
+is posted constitutes your acceptance of the changes.</p>
+<p class="tm33">&#160;</p>
+<h1>17. Contact Us</h1>
+<p class="tm35">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact:</p>
+<p class="tm35">Email: abconputers@gmail.com</p>
+<p class="tm35">AB Marketplace</p>
+<p class="tm35">Pakistan</p>
+<p class="tm29">&#160;</p>
+<p class="tm44"><em><span class="tm45">&copy; 2026 AB Marketplace (ABM). All rights reserved. Operated in Pakistan.</span></em></p>
+</body>
+</html>
